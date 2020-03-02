@@ -40,3 +40,7 @@ andy_end <- andy[30, "Weight"]
 andy_loss <- andy_start - andy_end
 andy_loss
 
+# loot at other subjects or maybe even everybody at once
+# redo the output of list.files()
+files <- list.files("diet_data")
+files
