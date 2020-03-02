@@ -44,3 +44,18 @@ andy_loss
 # redo the output of list.files()
 files <- list.files("diet_data")
 files
+
+# a list of the contents of 'diet_data' in alphabetical order
+files[1]
+files[2]
+files[3:5]
+
+# take a quick look at John.csv
+head(read.csv(files[3]))
+
+# Append the directory
+files_full <- list.files("diet_data", full.names = TRUE)
+files_full
+
+# take a quick look at John.csv after fix the directory
+head(read.csv(files_full[3]))
